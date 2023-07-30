@@ -56,7 +56,6 @@ body{
     color: var(--text-color);
     margin: 0 10px;
 }
-
 /* ==========================  Header Area ========================== */
 .header-area{
     padding: 30px 0;
@@ -67,7 +66,6 @@ body{
     justify-content: right;
     align-items:center;
 }
-
 .header-content .info-box:nth-child(2){
     padding: 0 30px;
     border-left: 1px solid var(--theme-color);
@@ -76,12 +74,9 @@ body{
 .header-content .info-box:first-child{
     padding: 0 30px;
 }
-
 .header-content .info-box:nth-child(3){
     padding: 0 30px;
 }
-
-
 .header-content .info-box .info-title{
     margin: 0;
     color: var(--gray-light-color);
@@ -90,7 +85,6 @@ body{
     margin: 0;
     font-weight: bold;
 }
-
 /* ========================== Nagivation Bar Area ========================== */
 .navigation-bar{
     background: var(--cyan-color);
@@ -109,7 +103,6 @@ body{
 .navbar .navbar-nav .list-item .sub-menu{
     background: #fff;
 }
-
 .navbar .navbar-nav .list-item .sub-menu ul li a {
     color: #000;
     opacity:0;
@@ -143,15 +136,11 @@ body{
     font-weight: 600;
     text-transform: uppercase;
 }
-
 .h-sub:hover .home-sub-menu li a{
     color: var(--theme-color);
     display: inline;
 }
-
 .home-sub-menu li:hover{
     background: var(--gray-light-color);
     width: 100%;
 }
-
-
