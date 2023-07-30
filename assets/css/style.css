@@ -1,0 +1,157 @@
+/* ========================== Base ========================== */
+*,::after, ::before{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+:root{
+    /* Custom Color */
+    --text-color:#000;
+    --theme-color:#ffb600;
+    --gray-color:#EBEBEB;
+    --white-light-color:#fff;
+    --gray-light-color:#646161;
+    --cyan-color:#23282D;
+    /* Typography */
+    --font: sans-serif;
+    --normal-font-size:1rem;
+    --small-font-size:0.7rem;
+    --menu-font:'Montserrat', sans-serif;
+}
+
+body{
+    font-family: var(--font);
+    font-size: var(--normal-font-size);
+}
+.theme-btn{
+    background: var(--theme-color);
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: var(--white-light-color);
+    font-weight: bold;
+}
+/* ========================== Top Bar Area ========================== */
+.topbar{
+    background: var(--gray-color);
+    padding: 15px;
+}
+.topbar ul{
+    display: inline-block;
+    margin-bottom:0;
+    padding: 0;
+}
+.topbar ul li{
+    list-style: none;
+}
+.topbar .top-info ul li{
+    display: inline-block;
+    padding-right: 8px;
+}
+
+.topbar .top-info ul li i{
+    font-size: 1.2rem;
+}
+
+.top-social-icon a{
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+/* ==========================  Header Area ========================== */
+.header-area{
+    padding: 30px 0;
+}
+.header-content{
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: right;
+    align-items:center;
+}
+
+.header-content .info-box:nth-child(2){
+    padding: 0 30px;
+    border-left: 1px solid var(--theme-color);
+    border-right: 1px solid var(--theme-color);
+}
+.header-content .info-box:first-child{
+    padding: 0 30px;
+}
+
+.header-content .info-box:nth-child(3){
+    padding: 0 30px;
+}
+
+
+.header-content .info-box .info-title{
+    margin: 0;
+    color: var(--gray-light-color);
+}
+.header-content .info-box .info-subtitle{
+    margin: 0;
+    font-weight: bold;
+}
+
+/* ========================== Nagivation Bar Area ========================== */
+.navigation-bar{
+    background: var(--cyan-color);
+    padding: 8px 0;
+}
+.navbar .navbar-nav .list-item .nav-link, .search-icon{
+    color: var(--white-light-color);
+}
+.navbar .navbar-nav .list-item .nav-link{
+    margin-right: 2rem;
+    font-family: var(--menu-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.navbar .navbar-nav .list-item .sub-menu{
+    background: #fff;
+}
+
+.navbar .navbar-nav .list-item .sub-menu ul li a {
+    color: #000;
+    opacity:0;
+}
+.h-sub{
+    position: relative;}
+
+.home-sub-menu{
+    background: var(--cyan-color);
+    text-decoration: none;
+    padding: 0;
+    margin-left: 7px;
+    height: 175px;
+    text-align: center;
+    position: absolute;
+    top:60px;
+    display: none;
+}
+.home-sub-menu li{
+    list-style: none;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    padding: 2px 25px;
+}
+.home-sub-menu li a{
+    text-decoration: none;
+    padding: 0;
+    color: var(--text-color);
+    font-family: var(--menu-font);
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.h-sub:hover .home-sub-menu li a{
+    color: var(--theme-color);
+    display: inline;
+}
+
+.home-sub-menu li:hover{
+    background: var(--gray-light-color);
+    width: 100%;
+}
+
+
